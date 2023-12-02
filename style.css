@@ -1,0 +1,384 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #F4F2E9;
+}
+
+/* Colors */
+:root {
+  --main-color: #f5b041;
+  --second-color: #212f3d;
+}
+section {
+  padding: 100px;
+}
+.hidden{
+  display: none;
+}
+/* Home CSS */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Navbar CSS */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 100px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.logo {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+ul {
+  display: flex;
+}
+ul li a {
+  padding: 10px 22px;
+  color: var(--second-color);
+  border-radius: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+ul li a:hover {
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+}
+/* Home Text CSS */
+.home-text {
+  max-width: 500px;
+}
+.home-text h1 {
+  color: var(--second-color);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  line-height: 5.5rem;
+}
+.home-text span {
+  color: var(--main-color);
+}
+.home-image {
+  width: 500px;
+  height: 500px;
+}
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Hire Me Button */
+.home-text a {
+  padding: 12px 34px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.home-text a:hover {
+  background: var(--second-color);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
+}
+/* Social */
+.social {
+  position: absolute;
+  display: flex;
+  bottom: 8%;
+  left: 14%;
+}
+.social i {
+  margin-right: 24px;
+  font-size: 24px;
+  color: var(--second-color);
+}
+.social i:hover {
+  color: var(--main-color);
+}
+/* Heading */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 4rem;
+}
+.heading h2 {
+  color: var(--second-color);
+  border-bottom: 3px solid var(--second-color);
+  font-size: 1.8rem;
+}
+.heading p {
+  color: var(--second-color);
+  margin-top: 0.5rem;
+}
+.experience-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.experience-image {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experience-image img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.experience-company{
+font-size: 0.8rem;
+text-align: center;
+}
+.experience-text {
+  width: 72%;
+  justify-content: center;
+  margin-left: 80px;
+}
+.experience-text .experience-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience-text h1 {
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.experience-text h2{
+  font-size: 1rem;
+  color: var(--second-color);
+}
+.experience-text p {
+  color: var(--second-color);
+  margin: 5px 0 24px;
+  /* text-align: justify; */
+  line-height: 1.8rem;
+}
+.experience-text a {
+  padding: 12px 20px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.experience-text a:hover {
+  background: var(--second-color);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
+}
+.experience-portfolio{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0 4rem;
+}
+.experience-portfolio img{
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.372);
+}
+.experience-portfolio .experience-box{
+  padding: 10px;
+  text-align: center;
+  max-width: 320px;
+}
+.experience-portfolio .experience-box p{
+  margin: 20px 1.5rem 0;
+}
+.portfolio-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.portfolio-content .box {
+  max-width: 350px;
+  height: 350px;
+  text-align: center;
+}
+.box img {
+  height: 350px;
+}
+.portfolio-content .presentation-box {
+  max-width: 450px;
+  text-align: center;
+  margin: 20px;
+}
+.presentation-box img{
+  height: 250px;  
+}
+.portfolio-content .poster-box {
+  max-width: 450px;
+  text-align: center;
+  margin: 20px;
+}
+.poster-box img{
+  height: 400px;  
+}
+.copyright {
+  padding: 20px;
+  background: var(--second-color);
+  color: #fff;
+  text-align: center;
+}
+
+/* Making Responsive */
+@media (max-width: 991px) {
+  nav {
+    padding: 10px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 60px;
+    right: 100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--second-color);
+    transition: 0.5s ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active {
+    right: 0;
+  }
+  nav ul li a {
+    font-size: 35px;
+    line-height: 80px;
+    color: #fff;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    cursor: pointer;
+  }
+  section {
+    padding: 80px;
+  }
+  .home-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    line-height: 4rem;
+  }
+  .home-image {
+    width: 400px;
+    height: 400px;
+  }
+  .social {
+    left: 110px;
+  }
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+  .experience-image {
+    width: 250px;
+    height: 400px;
+  }
+  .experience-text {
+    width: 400px;
+  }
+  .experience-text h1 {
+    font-size: 1.3rem;
+  }
+  .experience-text p {
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 871px) {
+  section {
+    padding: 50px;
+  }
+}
+@media (max-width: 800px) {
+  section {
+    padding: 35px;
+  }
+}
+/* For Small Devices */
+@media (max-width: 430px) {
+  section {
+    padding: 35px;
+  }
+  #home {
+    flex-direction: column;
+  }
+  .home-text {
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+  .home-image{
+    width: 345px;
+    height: 400px;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    line-height: 3rem;
+  }
+  .social i {
+    margin: 0 15px;
+  }
+  .social{
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  .heading{
+    margin: 0 0 1rem;
+  }
+  .experience-content {
+    flex-direction: column;
+  }
+  .experience-text{
+    max-width: 280px;
+    margin-left: 0;
+  }
+  .experience-image {
+    height: 30vh;
+}
+}
