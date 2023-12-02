@@ -32,6 +32,25 @@ sr.reveal('.experience-portfolio', { delay: 200 })
 sr.reveal('.heading', {})
 sr.reveal('.portfolio-content', {delay: 200})
 
+function showFullScreenImage(imageSrc) {
+  var popup = document.createElement('div');
+  popup.className = 'fullscreen-popup';
+
+  var image = document.createElement('img');
+  image.src = imageSrc;
+
+  var closeBtn = document.createElement('span');
+  closeBtn.className = 'close-btn';
+  closeBtn.innerHTML = '&times;';
+  closeBtn.onclick = function() {
+    document.body.removeChild(popup);
+  };
+
+  popup.appendChild(image);
+  popup.appendChild(closeBtn);
+
+  document.body.appendChild(popup);
+}
 
 function loadPage(page) {
   var dataElement = document.getElementById('data');
