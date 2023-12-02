@@ -255,7 +255,7 @@ text-align: center;
   margin: 20px;
 }
 .presentation-box img{
-  height: 250px;  
+  max-height: 210px;  
 }
 .portfolio-content .poster-box {
   max-width: 450px;
