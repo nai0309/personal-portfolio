@@ -26,17 +26,20 @@ const sr = ScrollReveal({
 sr.reveal('.home-text', {})
 sr.reveal('.home-image', { delay: 200 })
 sr.reveal('.social', { delay: 200 })
-sr.reveal('.experience-text', {})
+sr.reveal('.heading-experience', {})
+sr.reveal('.experience-text', { delay: 200 })
 sr.reveal('.experience-image', { delay: 200 })
 sr.reveal('.experience-portfolio', { delay: 200 })
+sr.reveal('.heading-sr-skill', {})
+sr.reveal('.content-sr-skill', { delay: 200 })
 sr.reveal('.heading-sr-ins', {})
-sr.reveal('.content-sr-ins', {delay: 200})
+sr.reveal('.content-sr-ins', { delay: 200 })
 sr.reveal('.heading-sr-presentation', {})
-sr.reveal('.content-sr-presentation', {delay: 200})
+sr.reveal('.content-sr-presentation', { delay: 200 })
 sr.reveal('.heading-sr-poster', {})
-sr.reveal('.content-sr-poster', {delay: 200})
+sr.reveal('.content-sr-poster', { delay: 200 })
 sr.reveal('.heading-sr-digitalArt', {})
-sr.reveal('.content-sr-digitalArt', {delay: 200})
+sr.reveal('.content-sr-digitalArt', { delay: 200 })
 
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
@@ -48,7 +51,7 @@ function showFullScreenImage(imageSrc) {
   var closeBtn = document.createElement('span');
   closeBtn.className = 'close-btn';
   closeBtn.innerHTML = '&times;';
-  closeBtn.onclick = function() {
+  closeBtn.onclick = function () {
     document.body.removeChild(popup);
   };
 

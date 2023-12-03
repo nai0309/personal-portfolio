@@ -226,12 +226,26 @@ text-align: center;
   height: auto;
   display: block;
 }
-
 .experience-box:hover {
   transform: translate(-10px, -10px); /* 圖片左上偏移的效果 */
 }
 /* work image hover effect end */
-
+.skill-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  color: var(--second-color);
+}
+.skill-box{
+  text-align: center;
+  width: 15%;
+}
+.skill-box .bx, .skill-box .fa-solid{
+  font-size: 3rem;
+  padding: 3px 0;
+}
 .experience-portfolio .experience-box p{
   margin: 20px 1.5rem 0;
 }
