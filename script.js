@@ -29,8 +29,14 @@ sr.reveal('.social', { delay: 200 })
 sr.reveal('.experience-text', {})
 sr.reveal('.experience-image', { delay: 200 })
 sr.reveal('.experience-portfolio', { delay: 200 })
-sr.reveal('.heading', {})
-sr.reveal('.portfolio-content', {delay: 200})
+sr.reveal('.heading-sr-ins', {})
+sr.reveal('.content-sr-ins', {delay: 200})
+sr.reveal('.heading-sr-presentation', {})
+sr.reveal('.content-sr-presentation', {delay: 200})
+sr.reveal('.heading-sr-poster', {})
+sr.reveal('.content-sr-poster', {delay: 200})
+sr.reveal('.heading-sr-digitalArt', {})
+sr.reveal('.content-sr-digitalArt', {delay: 200})
 
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
