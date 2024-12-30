@@ -263,6 +263,10 @@ text-align: center;
 .box img {
   height: 350px;
 }
+
+.portfolio-subtext {
+  margin-top: 50px;
+}
 .portfolio-content .presentation-box {
   max-width: 450px;
   text-align: center;
