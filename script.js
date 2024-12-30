@@ -23,12 +23,12 @@ const sr = ScrollReveal({
   reset: true
 })
 
-sr.reveal('.home-text', {})
-sr.reveal('.home-image', { delay: 200 })
+sr.reveal('.home-text', { delay: 200 })
+sr.reveal('.home-image', { delay: 250 })
 sr.reveal('.social', { delay: 200 })
-sr.reveal('.heading-experience', {})
-sr.reveal('.experience-text', { delay: 200 })
-sr.reveal('.experience-image', { delay: 200 })
+sr.reveal('.heading-experience', {delay: 200})
+sr.reveal('.experience-text', { delay: 250 })
+sr.reveal('.experience-image', { delay: 300 })
 sr.reveal('.experience-portfolio', { delay: 200 })
 sr.reveal('.heading-sr-skill', {delay: 200})
 sr.reveal('.content-sr-skill', { delay: 200 })
