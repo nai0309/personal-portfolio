@@ -265,7 +265,7 @@ text-align: center;
 }
 
 .portfolio-subtext {
-  margin-top: 50px;
+  margin-top: 50px important;
 }
 .portfolio-content .presentation-box {
   max-width: 450px;
