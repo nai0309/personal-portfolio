@@ -11,8 +11,8 @@
   scroll-behavior: smooth;
 }
 
-body{
-  background: #F4F2E9;
+body {
+  background: #f4f2e9;
 }
 
 /* Colors */
@@ -23,7 +23,7 @@ body{
 section {
   padding: 100px;
 }
-.hidden{
+.hidden {
   display: none;
 }
 /* Home CSS */
@@ -157,16 +157,16 @@ ul li a:hover {
   object-fit: contain;
   object-position: center;
 }
-.experience-company{
-font-size: 0.8rem;
-text-align: center;
+.experience-company {
+  font-size: 0.8rem;
+  text-align: center;
 }
 .experience-text {
   width: 72%;
   justify-content: center;
   margin-left: 80px;
 }
-.experience-text .experience-title{
+.experience-text .experience-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -175,7 +175,7 @@ text-align: center;
   font-size: 1.5rem;
   color: var(--second-color);
 }
-.experience-text h2{
+.experience-text h2 {
   font-size: 1rem;
   color: var(--second-color);
 }
@@ -197,18 +197,18 @@ text-align: center;
   background: var(--second-color);
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
-.experience-portfolio{
+.experience-portfolio {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 1rem 0 4rem;
 }
-.experience-portfolio img{
+.experience-portfolio img {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.372);
 }
-.experience-portfolio .experience-box{
+.experience-portfolio .experience-box {
   padding: 10px;
   text-align: center;
   max-width: 320px;
@@ -230,7 +230,7 @@ text-align: center;
   transform: translate(-10px, -10px); /* 圖片左上偏移的效果 */
 }
 /* work image hover effect end */
-.skill-content{
+.skill-content {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -238,15 +238,16 @@ text-align: center;
   width: 100%;
   color: var(--second-color);
 }
-.skill-box{
+.skill-box {
   text-align: center;
   width: 15%;
 }
-.skill-box .bx, .skill-box .fa-solid{
+.skill-box .bx,
+.skill-box .fa-solid {
   font-size: 3rem;
   padding: 3px 0;
 }
-.experience-portfolio .experience-box p{
+.experience-portfolio .experience-box p {
   margin: 20px 1.5rem 0;
 }
 .portfolio-content {
@@ -263,25 +264,27 @@ text-align: center;
 .box img {
   height: 350px;
 }
-
-.portfolio-subtext {
-  margin-top: 50px important;
+.portfolio-subtitle {
+  margin-top: 50px !important;
+}
+.portfolio-text {
+  text-align: center;
 }
 .portfolio-content .presentation-box {
   max-width: 450px;
   text-align: center;
   margin: 20px;
 }
-.presentation-box img{
-  max-height: 210px;  
+.presentation-box img {
+  max-height: 210px;
 }
 .portfolio-content .poster-box {
   max-width: 450px;
   text-align: center;
   margin: 20px;
 }
-.poster-box img{
-  height: 400px;  
+.poster-box img {
+  height: 400px;
 }
 .copyright {
   padding: 20px;
@@ -415,7 +418,7 @@ text-align: center;
     max-width: 400px;
     margin-top: 2rem;
   }
-  .home-image{
+  .home-image {
     width: 345px;
     height: 400px;
   }
@@ -427,26 +430,26 @@ text-align: center;
   .social i {
     margin: 0 15px;
   }
-  .social{
+  .social {
     position: relative;
     left: 0;
     bottom: 0;
   }
-  .heading{
+  .heading {
     margin: 0 0 1rem;
   }
   .experience-content {
     flex-direction: column;
   }
-  .experience-text{
+  .experience-text {
     max-width: 280px;
     margin-left: 0;
   }
   .experience-image {
     height: 30vh;
-}
-.skill-box{
-  width: 100px;
-  padding-bottom: 1.2rem;
-}
+  }
+  .skill-box {
+    width: 100px;
+    padding-bottom: 1.2rem;
+  }
 }
