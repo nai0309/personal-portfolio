@@ -34,12 +34,12 @@ sr.reveal('.heading-sr-skill', {delay: 200})
 sr.reveal('.content-sr-skill', { delay: 200 })
 sr.reveal('.heading-sr-ins', {})
 sr.reveal('.content-sr-ins', { delay: 200 })
-sr.reveal('.heading-sr-presentation', {})
-sr.reveal('.content-sr-presentation', { delay: 200 })
-sr.reveal('.heading-sr-poster', {})
-sr.reveal('.content-sr-poster', { delay: 200 })
-sr.reveal('.heading-sr-digitalArt', {})
-sr.reveal('.content-sr-digitalArt', { delay: 200 })
+sr.reveal('.heading-sr-presentation', {delay: 300})
+sr.reveal('.content-sr-presentation', { delay: 400 })
+sr.reveal('.heading-sr-poster', {delay: 300})
+sr.reveal('.content-sr-poster', { delay: 400 })
+sr.reveal('.heading-sr-digitalArt', {delay: 300})
+sr.reveal('.content-sr-digitalArt', { delay: 400 })
 
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
