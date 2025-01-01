@@ -41,6 +41,13 @@ sr.reveal('.content-sr-poster', { delay: 400 })
 sr.reveal('.heading-sr-digitalArt', {delay: 300})
 sr.reveal('.content-sr-digitalArt', { delay: 400 })
 
+function myCallback (el) {
+  el.classList.remove('is-animating');
+  el.classList.add('is-visible');
+}
+
+sr.reveal('.home-text', { afterReveal: myCallback });
+
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
   popup.className = 'fullscreen-popup';
