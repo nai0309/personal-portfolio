@@ -26,22 +26,22 @@ const sr = ScrollReveal({
 sr.reveal('.home-text', { delay: 200 })
 sr.reveal('.home-image', { delay: 250 })
 sr.reveal('.social', { delay: 200 })
-sr.reveal('.heading-experience', {delay: 200})
+sr.reveal('.heading-experience', { delay: 200 })
 sr.reveal('.experience-text', { delay: 300 })
 sr.reveal('.experience-image', { delay: 300 })
 sr.reveal('.experience-portfolio', { delay: 400 })
-sr.reveal('.heading-sr-skill', {delay: 200})
+sr.reveal('.heading-sr-skill', { delay: 200 })
 sr.reveal('.content-sr-skill', { delay: 200 })
 sr.reveal('.heading-sr-ins', {})
 sr.reveal('.content-sr-ins', { delay: 200 })
-sr.reveal('.heading-sr-presentation', {} )
+sr.reveal('.heading-sr-presentation', {})
 sr.reveal('.content-sr-presentation', { delay: 200 })
 sr.reveal('.heading-sr-poster', {})
 sr.reveal('.content-sr-poster', { delay: 200 })
 sr.reveal('.heading-sr-digitalArt', {})
 sr.reveal('.content-sr-digitalArt', { delay: 200 })
 
-function myCallback (el) {
+function myCallback(el) {
   el.classList.remove('is-animating');
   el.classList.add('is-visible');
 }
@@ -49,19 +49,19 @@ function myCallback (el) {
 sr.reveal('.home-text', { afterReveal: myCallback });
 sr.reveal('.home-image', { afterReveal: myCallback })
 sr.reveal('.social', { afterReveal: myCallback })
-sr.reveal('.heading-experience', {afterReveal: myCallback})
+sr.reveal('.heading-experience', { afterReveal: myCallback })
 sr.reveal('.experience-text', { afterReveal: myCallback })
 sr.reveal('.experience-image', { afterReveal: myCallback })
 sr.reveal('.experience-portfolio', { afterReveal: myCallback })
-sr.reveal('.heading-sr-skill', {afterReveal: myCallback})
+sr.reveal('.heading-sr-skill', { afterReveal: myCallback })
 sr.reveal('.content-sr-skill', { afterReveal: myCallback })
-sr.reveal('.heading-sr-ins', {})
+sr.reveal('.heading-sr-ins', { afterReveal: myCallback })
 sr.reveal('.content-sr-ins', { afterReveal: myCallback })
-sr.reveal('.heading-sr-presentation', {afterReveal: myCallback})
+sr.reveal('.heading-sr-presentation', { afterReveal: myCallback })
 sr.reveal('.content-sr-presentation', { afterReveal: myCallback })
-sr.reveal('.heading-sr-poster', {afterReveal: myCallback})
+sr.reveal('.heading-sr-poster', { afterReveal: myCallback })
 sr.reveal('.content-sr-poster', { afterReveal: myCallback })
-sr.reveal('.heading-sr-digitalArt', {afterReveal: myCallback})
+sr.reveal('.heading-sr-digitalArt', { afterReveal: myCallback })
 sr.reveal('.content-sr-digitalArt', { afterReveal: myCallback })
 
 function showFullScreenImage(imageSrc) {
