@@ -47,6 +47,22 @@ function myCallback (el) {
 }
 
 sr.reveal('.home-text', { afterReveal: myCallback });
+sr.reveal('.home-image', { afterReveal: myCallback })
+sr.reveal('.social', { afterReveal: myCallback })
+sr.reveal('.heading-experience', {afterReveal: myCallback})
+sr.reveal('.experience-text', { afterReveal: myCallback })
+sr.reveal('.experience-image', { afterReveal: myCallback })
+sr.reveal('.experience-portfolio', { afterReveal: myCallback })
+sr.reveal('.heading-sr-skill', {afterReveal: myCallback})
+sr.reveal('.content-sr-skill', { afterReveal: myCallback })
+sr.reveal('.heading-sr-ins', {})
+sr.reveal('.content-sr-ins', { afterReveal: myCallback })
+sr.reveal('.heading-sr-presentation', {afterReveal: myCallback})
+sr.reveal('.content-sr-presentation', { afterReveal: myCallback })
+sr.reveal('.heading-sr-poster', {afterReveal: myCallback})
+sr.reveal('.content-sr-poster', { afterReveal: myCallback })
+sr.reveal('.heading-sr-digitalArt', {afterReveal: myCallback})
+sr.reveal('.content-sr-digitalArt', { afterReveal: myCallback })
 
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
