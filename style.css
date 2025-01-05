@@ -230,6 +230,60 @@ ul li a:hover {
   transform: translate(-10px, -10px); /* 圖片左上偏移的效果 */
 }
 /* work image hover effect end */
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+}
+.reviews-box {
+  height: 520px;
+  width: 330px;
+  /* background-color: #222b3c70; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.review-img {
+  position: absolute;
+  top:30px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  outline: 10px solid #f4f2e9;
+  z-index: 2;
+}
+.review-bg {
+  position: absolute;
+  bottom: -30px;
+  height: 450px;
+  width: 330px;
+  background-image: url(/images/reviewBoxBg.svg) ;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 150px 150px 0 0;
+  text-align: center;
+  padding: 0 20px;
+}
+.review-text img{
+  height: 1.4rem;
+}
+.review-text{
+  position: relative;
+  top: 67px;
+}
+.review-role {
+  font-size: 14px;
+}
+.review-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.review-content{
+  text-align: center;
+  padding: 5px 15px 0;
+  font-size: 15px;
+}
 .skill-content {
   display: flex;
   justify-content: space-around;
