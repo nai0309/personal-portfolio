@@ -258,7 +258,7 @@ ul li a:hover {
   bottom: -30px;
   height: 450px;
   width: 330px;
-  background-image: url(/images/reviewBoxBg.svg) ;
+  background-image: url(images/reviewBoxBg.svg) ;
   background-color: #fff;
   background-size: cover;
   border-radius: 150px 150px 0 0;
