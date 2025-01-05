@@ -56,7 +56,7 @@ nav {
   color: var(--main-color);
   font-weight: 700;
 }
-ul {
+.menu {
   display: flex;
 }
 ul li a {
