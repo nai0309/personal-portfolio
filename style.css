@@ -231,22 +231,71 @@ ul li a:hover {
 }
 /* work image hover effect end */
 .reviews-container {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0));
 }
+
+@keyframes scrollleft {
+  to {
+    left: -330px;
+  }
+}
+
 .reviews-box {
   height: 520px;
   width: 330px;
-  /* background-color: #222b3c70; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  left: max(calc(330px * 5), 100%);
+  animation-name: scrollleft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
+
+.reviews-container.paused .reviews-box, 
+.reviews-container:hover .reviews-box
+{
+  animation-play-state: paused;
+}
+
+.reviews-box1 {
+  animation-delay: calc(30s / 5 * ( 5 - 1 ) * -1);
+}
+.reviews-box2 {
+  animation-delay: calc(30s / 5 * ( 5 - 2 ) * -1);
+}
+.reviews-box3 {
+  animation-delay: calc(30s / 5 * ( 5 - 3 ) * -1);
+}
+.reviews-box4 {
+  animation-delay: calc(30s / 5 * ( 5 - 4 ) * -1);
+}
+.reviews-box5 {
+  animation-delay: calc(30s / 5 * ( 5 - 5 ) * -1);
+}
+
 .review-img {
   position: absolute;
-  top:30px;
+  top: 30px;
   height: 100px;
   width: 100px;
   border-radius: 100%;
@@ -258,17 +307,17 @@ ul li a:hover {
   bottom: -30px;
   height: 450px;
   width: 330px;
-  background-image: url(images/reviewBoxBg.svg) ;
+  background-image: url(images/reviewBoxBg.svg);
   background-color: #fff;
   background-size: cover;
   border-radius: 150px 150px 0 0;
   text-align: center;
   padding: 0 20px;
 }
-.review-text img{
+.review-text img {
   height: 1.4rem;
 }
-.review-text{
+.review-text {
   position: relative;
   top: 67px;
 }
@@ -279,7 +328,7 @@ ul li a:hover {
   font-size: 24px;
   font-weight: bold;
 }
-.review-content{
+.review-content {
   text-align: center;
   padding: 5px 15px 0;
   font-size: 15px;

@@ -30,7 +30,7 @@ sr.reveal('.heading-experience', { delay: 200 })
 sr.reveal('.experience-text', { delay: 300 })
 sr.reveal('.experience-image', { delay: 300 })
 sr.reveal('.experience-portfolio', { delay: 400 })
-// sr.reveal('.heading-sr-reviews', { delay:200 })
+sr.reveal('.heading-sr-reviews', { delay:200 })
 // sr.reveal('.content-sr-reviews', { delay:200 })
 sr.reveal('.heading-sr-skill', { delay: 200 })
 sr.reveal('.content-sr-skill', { delay: 200 })
@@ -99,3 +99,17 @@ function loadPage(page) {
   xhr.open('GET', page, true);
   xhr.send();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reviewsContainer = document.querySelector('.reviews-container');
+
+  // 手機觸控控制動畫暫停
+  reviewsContainer.addEventListener('touchstart', () => {
+      reviewsContainer.classList.add('paused');
+  });
+
+  reviewsContainer.addEventListener('touchend', () => {
+      reviewsContainer.classList.remove('paused');
+  });
+});
+
