@@ -1,1 +1,1 @@
-Hi I'm Naihui, a Website Project Coodinator! This is my portfoil :)
+Hi, I'm Naihui, a Website Project coordinator! This is my portfolio :)
