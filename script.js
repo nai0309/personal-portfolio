@@ -43,29 +43,6 @@ sr.reveal('.content-sr-poster', { delay: 200 })
 sr.reveal('.heading-sr-digitalArt', {})
 sr.reveal('.content-sr-digitalArt', { delay: 200 })
 
-// function myCallback(el) {
-//   el.classList.remove('is-animating');
-//   el.classList.add('is-visible');
-// }
-
-// sr.reveal('.home-text', { afterReveal: myCallback });
-// sr.reveal('.home-image', { afterReveal: myCallback })
-// sr.reveal('.social', { afterReveal: myCallback })
-// sr.reveal('.heading-experience', { afterReveal: myCallback })
-// sr.reveal('.experience-text', { afterReveal: myCallback })
-// sr.reveal('.experience-image', { afterReveal: myCallback })
-// sr.reveal('.experience-portfolio', { afterReveal: myCallback })
-// sr.reveal('.heading-sr-skill', { afterReveal: myCallback })
-// sr.reveal('.content-sr-skill', { afterReveal: myCallback })
-// sr.reveal('.heading-sr-ins', { afterReveal: myCallback })
-// sr.reveal('.content-sr-ins', { afterReveal: myCallback })
-// sr.reveal('.heading-sr-presentation', { afterReveal: myCallback })
-// sr.reveal('.content-sr-presentation', { afterReveal: myCallback })
-// sr.reveal('.heading-sr-poster', { afterReveal: myCallback })
-// sr.reveal('.content-sr-poster', { afterReveal: myCallback })
-// sr.reveal('.heading-sr-digitalArt', { afterReveal: myCallback })
-// sr.reveal('.content-sr-digitalArt', { afterReveal: myCallback })
-
 function showFullScreenImage(imageSrc) {
   var popup = document.createElement('div');
   popup.className = 'fullscreen-popup';
@@ -111,5 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
   reviewsContainer.addEventListener('touchend', () => {
       reviewsContainer.classList.remove('paused');
   });
+  
+  reviewsContainer.addEventListener('touchcancel', () => {
+    reviewsContainer.classList.remove('paused');
+});
+
 });
 
