@@ -77,27 +77,80 @@ function loadPage(page) {
   xhr.send();
 }
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const reviewsContainer = document.querySelector('.reviews-container');
+
+//   // 手機觸控控制動畫暫停
+//   reviewsContainer.addEventListener('touchstart', () => {
+//       reviewsContainer.classList.add('paused');
+//   });
+
+//   reviewsContainer.addEventListener('touchend', () => {
+//       reviewsContainer.classList.remove('paused');
+//   });
+  
+//   reviewsContainer.addEventListener('touchcancel', () => {
+//     reviewsContainer.classList.remove('paused');
+// });
+
+//   reviewsContainer.addEventListener('touchend', () => {
+//     setTimeout(() => {
+//         reviewsContainer.classList.remove('paused');
+//     }, 50); // 加入延遲，避免競態條件
+//   });
+
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
+  const reviewsWrapper = document.querySelector('.reviews-wrapper');
   const reviewsContainer = document.querySelector('.reviews-container');
 
-  // 手機觸控控制動畫暫停
-  reviewsContainer.addEventListener('touchstart', () => {
-      reviewsContainer.classList.add('paused');
+  let isTouching = false; // 是否正在觸控
+  let startX = 0;         // 起始觸控位置
+  let currentX = 0;       // 當前觸控位置
+  let translateX = 0;     // 容器平移位置
+  let animationPaused = false; // 動畫是否暫停
+
+  // 觸摸開始
+  reviewsWrapper.addEventListener('touchstart', (e) => {
+    isTouching = true;
+    startX = e.touches[0].clientX;
+    reviewsContainer.classList.add('paused'); // 暫停動畫
+    animationPaused = true;
   });
 
-  reviewsContainer.addEventListener('touchend', () => {
-      reviewsContainer.classList.remove('paused');
-  });
-  
-  reviewsContainer.addEventListener('touchcancel', () => {
-    reviewsContainer.classList.remove('paused');
-});
+  // 觸摸移動
+  reviewsWrapper.addEventListener('touchmove', (e) => {
+    if (!isTouching) return;
 
-  reviewsContainer.addEventListener('touchend', () => {
+    currentX = e.touches[0].clientX;
+    const deltaX = currentX - startX;
+
+    // 更新平移位置
+    reviewsContainer.style.transform = `translateX(${translateX + deltaX}px)`;
+  });
+
+  // 觸摸結束
+  reviewsWrapper.addEventListener('touchend', (e) => {
+    if (!isTouching) return;
+
+    const deltaX = currentX - startX;
+    translateX += deltaX; // 更新平移總量
+
+    // 限制滑動範圍，避免內容超出左右邊界
+    const maxTranslate = -(reviewsContainer.scrollWidth - reviewsWrapper.offsetWidth);
+    if (translateX > 0) translateX = 0; // 限制左側
+    if (translateX < maxTranslate) translateX = maxTranslate; // 限制右側
+
+    reviewsContainer.style.transform = `translateX(${translateX}px)`;
+    isTouching = false;
+
+    // 恢復動畫
     setTimeout(() => {
-        reviewsContainer.classList.remove('paused');
-    }, 50); // 加入延遲，避免競態條件
+      reviewsContainer.classList.remove('paused');
+      animationPaused = false;
+    }, 300); // 給用戶手動操作的緩衝時間
   });
-
 });
+
 
