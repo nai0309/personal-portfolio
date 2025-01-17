@@ -93,5 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
     reviewsContainer.classList.remove('paused');
 });
 
+  reviewsContainer.addEventListener('touchend', () => {
+    setTimeout(() => {
+        reviewsContainer.classList.remove('paused');
+    }, 50); // 加入延遲，避免競態條件
+  });
+
 });
 
