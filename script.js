@@ -31,11 +31,8 @@ sr.reveal('.social', { delay: 200 })
 // sr.reveal('.experience-image', { delay: 300 })
 // sr.reveal('.experience-portfolio', { delay: 400 })
 // sr.reveal('.heading-sr-reviews', { delay:200 })
-<<<<<<< HEAD
 // // sr.reveal('.content-sr-reviews', { delay:200 })
-=======
 // sr.reveal('.content-sr-reviews', { delay:200 })
->>>>>>> d8e7ea0a6ef3396c6bc0f458ebcc15c40fb34719
 // sr.reveal('.heading-sr-skill', { delay: 200 })
 // sr.reveal('.content-sr-skill', { delay: 200 })
 // sr.reveal('.heading-sr-ins', {})
