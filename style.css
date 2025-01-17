@@ -230,79 +230,81 @@ ul li a:hover {
   transform: translate(-10px, -10px); /* 圖片左上偏移的效果 */
 }
 /* work image hover effect end */
-.reviews-container {
-  width: 100%;
-  max-width: 1536px;
-  margin-inline: auto;
-  position: relative;
-  height: 560px;
-  overflow: hidden;
-  display: flex;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0,0,0,0),
-    rgba(0,0,0,1) 20%,
-    rgba(0,0,0,1) 80%,
-    rgba(0,0,0,0)
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0));
-}
 
-@keyframes scrollleft {
-  to {
-    left: -330px;
+@media (max-width: 871px) {
+  .reviews-container {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 560px;
+    overflow: hidden;
+    display: flex;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,0),
+      rgba(0,0,0,1) 20%,
+      rgba(0,0,0,1) 80%,
+      rgba(0,0,0,0)
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0));
   }
+  
+  @keyframes scrollleft {
+    to {
+      left: -330px;
+    }
+  }
+  
+  .reviews-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1536px;
+    height: 560px;
+    margin-inline: auto;
+  }
+  
+  .reviews-box {
+    height: 520px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: max(calc(330px * 5), 100%);
+    animation-name: scrollleft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .reviews-container.paused, 
+  .reviews-container:hover .reviews-box
+  {
+    animation-play-state: paused;
+  }
+  
+  .reviews-box1 {
+    animation-delay: calc(30s / 5 * ( 5 - 1 ) * -1);
+  }
+  .reviews-box2 {
+    animation-delay: calc(30s / 5 * ( 5 - 2 ) * -1);
+  }
+  .reviews-box3 {
+    animation-delay: calc(30s / 5 * ( 5 - 3 ) * -1);
+  }
+  .reviews-box4 {
+    animation-delay: calc(30s / 5 * ( 5 - 4 ) * -1);
+  }
+  .reviews-box5 {
+    animation-delay: calc(30s / 5 * ( 5 - 5 ) * -1);
+  }  
 }
-
-.reviews-wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  max-width: 1536px;
-  height: 560px;
-  margin-inline: auto;
-}
-
-.reviews-box {
-  height: 520px;
-  width: 330px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: max(calc(330px * 5), 100%);
-  animation-name: scrollleft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.reviews-container.paused, 
-.reviews-container:hover .reviews-box
-{
-  animation-play-state: paused;
-}
-
-.reviews-box1 {
-  animation-delay: calc(30s / 5 * ( 5 - 1 ) * -1);
-}
-.reviews-box2 {
-  animation-delay: calc(30s / 5 * ( 5 - 2 ) * -1);
-}
-.reviews-box3 {
-  animation-delay: calc(30s / 5 * ( 5 - 3 ) * -1);
-}
-.reviews-box4 {
-  animation-delay: calc(30s / 5 * ( 5 - 4 ) * -1);
-}
-.reviews-box5 {
-  animation-delay: calc(30s / 5 * ( 5 - 5 ) * -1);
-}
-
 .review-img {
   position: absolute;
   top: 30px;
