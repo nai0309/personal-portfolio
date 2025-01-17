@@ -237,6 +237,12 @@ ul li a:hover {
   position: relative;
   height: 560px;
   overflow: hidden;
+  display: flex;
+  gap: 20px; /* 每個 reviews-box 間的間距 */
+  height: 100%;
+  will-change: transform;
+  transition: transform 0.3s ease-out; /* 平滑滑動 */
+  animation: scrollleft 30s linear infinite;
   mask-image: linear-gradient(
     to right,
     rgba(0,0,0,0),
@@ -258,6 +264,15 @@ ul li a:hover {
   }
 }
 
+.reviews-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1536px;
+  height: 560px;
+  margin-inline: auto;
+}
+
 .reviews-box {
   height: 520px;
   width: 330px;
@@ -271,7 +286,7 @@ ul li a:hover {
   animation-iteration-count: infinite;
 }
 
-.reviews-container.paused .reviews-box, 
+.reviews-container.paused, 
 .reviews-container:hover .reviews-box
 {
   animation-play-state: paused;
