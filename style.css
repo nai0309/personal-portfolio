@@ -337,7 +337,7 @@ ul li a:hover {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 100%;
   color: var(--second-color);
 }
@@ -554,5 +554,8 @@ ul li a:hover {
   .skill-box {
     width: 100px;
     padding-bottom: 1.2rem;
+  }
+  .skill-content {
+    flex-wrap: wrap;
   }
 }
