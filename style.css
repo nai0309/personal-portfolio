@@ -238,11 +238,6 @@ ul li a:hover {
   height: 560px;
   overflow: hidden;
   display: flex;
-  gap: 20px; /* 每個 reviews-box 間的間距 */
-  height: 100%;
-  will-change: transform;
-  transition: transform 0.3s ease-out; /* 平滑滑動 */
-  animation: scrollleft 30s linear infinite;
   mask-image: linear-gradient(
     to right,
     rgba(0,0,0,0),
