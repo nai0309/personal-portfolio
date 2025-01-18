@@ -593,10 +593,20 @@ ul li a:hover {
   .reviews-container .reviews-box, .reviews-box{
   animation-play-state: paused;
   }
+  #reviews {
+    padding: 0;
+  }
   .reviews-box {
-    width: 0;
+    width: 420px;
     margin: 0 auto;
   }
+  /* .reviews-container{
+    width: 130%;
+    left: -50px;
+  } */
+  /* .reviews-wrapper{
+    right: -5px;
+  } */
   .skill-box {
     width: 100px;
     padding-bottom: 1.2rem;
