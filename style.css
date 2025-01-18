@@ -597,8 +597,8 @@ ul li a:hover {
     padding: 0;
   }
   .reviews-box {
-    width: 420px;
-    margin: 0 auto;
+    width: 260px;
+    /* margin: 0 auto; */
   }
   .reviews-container{
     overflow: scroll;
