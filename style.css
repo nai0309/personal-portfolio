@@ -600,10 +600,9 @@ ul li a:hover {
     width: 420px;
     margin: 0 auto;
   }
-  /* .reviews-container{
-    width: 130%;
-    left: -50px;
-  } */
+  .reviews-container{
+    overflow: scroll;
+  }
   /* .reviews-wrapper{
     right: -5px;
   } */
