@@ -231,80 +231,79 @@ ul li a:hover {
 }
 /* work image hover effect end */
 
-@media (max-width: 871px) {
-  .reviews-container {
-    width: 100%;
-    max-width: 1536px;
-    margin-inline: auto;
-    position: relative;
-    height: 560px;
-    overflow: hidden;
-    display: flex;
-    mask-image: linear-gradient(
-      to right,
-      rgba(0,0,0,0),
-      rgba(0,0,0,1) 20%,
-      rgba(0,0,0,1) 80%,
-      rgba(0,0,0,0)
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1) 20%,
-      rgba(0, 0, 0, 1) 80%,
-      rgba(0, 0, 0, 0));
-  }
-  
-  @keyframes scrollleft {
-    to {
-      left: -330px;
-    }
-  }
-  
-  .reviews-wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 1536px;
-    height: 560px;
-    margin-inline: auto;
-  }
-  
-  .reviews-box {
-    height: 520px;
-    width: 330px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: max(calc(330px * 5), 100%);
-    animation-name: scrollleft;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  
-  .reviews-container.paused, 
-  .reviews-container:hover .reviews-box
-  {
-    animation-play-state: paused;
-  }
-  
-  .reviews-box1 {
-    animation-delay: calc(30s / 5 * ( 5 - 1 ) * -1);
-  }
-  .reviews-box2 {
-    animation-delay: calc(30s / 5 * ( 5 - 2 ) * -1);
-  }
-  .reviews-box3 {
-    animation-delay: calc(30s / 5 * ( 5 - 3 ) * -1);
-  }
-  .reviews-box4 {
-    animation-delay: calc(30s / 5 * ( 5 - 4 ) * -1);
-  }
-  .reviews-box5 {
-    animation-delay: calc(30s / 5 * ( 5 - 5 ) * -1);
-  }  
+.reviews-container {
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+  display: flex;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0));
 }
+
+@keyframes scrollleft {
+  to {
+    left: -330px;
+  }
+}
+
+.reviews-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1536px;
+  height: 560px;
+  margin-inline: auto;
+}
+
+.reviews-box {
+  height: 520px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: max(calc(330px * 5), 100%);
+  animation-name: scrollleft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.reviews-container.paused, 
+.reviews-container:hover .reviews-box
+{
+  animation-play-state: paused;
+}
+
+.reviews-box1 {
+  animation-delay: calc(30s / 5 * ( 5 - 1 ) * -1);
+}
+.reviews-box2 {
+  animation-delay: calc(30s / 5 * ( 5 - 2 ) * -1);
+}
+.reviews-box3 {
+  animation-delay: calc(30s / 5 * ( 5 - 3 ) * -1);
+}
+.reviews-box4 {
+  animation-delay: calc(30s / 5 * ( 5 - 4 ) * -1);
+}
+.reviews-box5 {
+  animation-delay: calc(30s / 5 * ( 5 - 5 ) * -1);
+}
+
 .review-img {
   position: absolute;
   top: 30px;
@@ -435,6 +434,10 @@ ul li a:hover {
   cursor: pointer;
 }
 
+.reviews-order-box {
+  display: none;
+}
+
 /* Making Responsive */
 @media (max-width: 991px) {
   nav {
@@ -563,6 +566,37 @@ ul li a:hover {
   .experience-image {
     height: 30vh;
   }
+  .reviews-order-box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .reviews-order{
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+    position: relative;
+    color: #f5b041;
+  }
+  .reviews-order-box:active {
+    top: 1px;
+  }
+  .reviews-order-box:focus {
+    background: #000;
+  }
+  .reviews-container .reviews-box, .reviews-box{
+  animation-play-state: paused;
+  }
+  .reviews-box {
+    width: 0;
+    margin: 0 auto;
+  }
   .skill-box {
     width: 100px;
     padding-bottom: 1.2rem;
@@ -570,4 +604,5 @@ ul li a:hover {
   .skill-content {
     flex-wrap: wrap;
   }
+  
 }

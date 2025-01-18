@@ -78,27 +78,27 @@ function loadPage(page) {
   xhr.send();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const reviewsContainer = document.querySelector('.reviews-container');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const reviewsContainer = document.querySelector('.reviews-container');
 
-  // 手機觸控控制動畫暫停
-  reviewsContainer.addEventListener('touchstart', () => {
-      reviewsContainer.classList.add('paused');
-  });
+//   // 手機觸控控制動畫暫停
+//   reviewsContainer.addEventListener('touchstart', () => {
+//       reviewsContainer.classList.add('paused');
+//   });
 
-  reviewsContainer.addEventListener('touchend', () => {
-      reviewsContainer.classList.remove('paused');
-  });
+//   reviewsContainer.addEventListener('touchend', () => {
+//       reviewsContainer.classList.remove('paused');
+//   });
   
-  reviewsContainer.addEventListener('touchcancel', () => {
-    reviewsContainer.classList.remove('paused');
-});
+//   reviewsContainer.addEventListener('touchcancel', () => {
+//     reviewsContainer.classList.remove('paused');
+// });
 
-  reviewsContainer.addEventListener('touchend', () => {
-    setTimeout(() => {
-        reviewsContainer.classList.remove('paused');
-    }, 50); // 加入延遲，避免競態條件
-  });
+//   reviewsContainer.addEventListener('touchend', () => {
+//     setTimeout(() => {
+//         reviewsContainer.classList.remove('paused');
+//     }, 50); // 加入延遲，避免競態條件
+//   });
 
-});
+// });
 
