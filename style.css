@@ -594,18 +594,19 @@ ul li a:hover {
   animation-play-state: paused;
   }
   #reviews {
-    padding: 0;
+    padding: 65px 0px 35px 0px;
+    height: 100vh;
   }
   .reviews-box {
-    width: 260px;
+    width: 100vw;
     /* margin: 0 auto; */
   }
   .reviews-container{
     overflow: scroll;
   }
-  /* .reviews-wrapper{
-    right: -5px;
-  } */
+  .reviews-wrapper{
+    width: 100vw;
+  }
   .skill-box {
     width: 100px;
     padding-bottom: 1.2rem;
