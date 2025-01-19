@@ -599,13 +599,17 @@ ul li a:hover {
   }
   .reviews-box {
     width: 100vw;
-    left: 1310px;
   }
   .reviews-container{
     overflow: scroll;
   }
   .reviews-wrapper{
     width: 100vw;
+  }
+  @keyframes scrollleft {
+    to {
+      left:-106vw;
+    }
   }
   .skill-box {
     width: 100px;
