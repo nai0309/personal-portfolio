@@ -599,7 +599,7 @@ ul li a:hover {
   }
   .reviews-box {
     width: 100vw;
-    /* margin: 0 auto; */
+    left: 1310px;
   }
   .reviews-container{
     overflow: scroll;
